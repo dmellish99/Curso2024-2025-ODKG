@@ -12,7 +12,7 @@
 @prefix : <http://mapping.example.com/>.
 @prefix schema: <https://schema.org/>.
 @prefix prov: <https://www.w3.org/TR/prov-o/>.
-@prefix rps: <http://riversidepollutionstudy.org/ontology/>.
+@prefix rps: <http://riversidepollutionstudy.org/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 :rules_000 a void:Dataset.
@@ -38,7 +38,7 @@
     rdfs:label "TriplesMap1".
 :s_000 a rr:SubjectMap.
 :map_TriplesMap1_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://riversidepollutionstudy.org/ontology/Observation/{observation_id}".
+:s_000 rr:template "http://riversidepollutionstudy.org/Observation/{observation_id}".
 :pom_000 a rr:PredicateObjectMap.
 :map_TriplesMap1_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
@@ -86,7 +86,7 @@
 :pm_004 rr:constant schema:observationAbout.
 :pom_004 rr:objectMap :om_004.
 :om_004 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/Place/{latitude}_{longitude}";
+    rr:template "http://riversidepollutionstudy.org/Place/{latitude}_{longitude}";
     rr:termType rr:Literal.
 :pom_005 a rr:PredicateObjectMap.
 :map_TriplesMap1_000 rr:predicateObjectMap :pom_005.
@@ -95,7 +95,7 @@
 :pm_005 rr:constant schema:isPartOf.
 :pom_005 rr:objectMap :om_005.
 :om_005 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/Dataset/{dataset_id}";
+    rr:template "http://riversidepollutionstudy.org/Dataset/{dataset_id}";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_TriplesMap2_000.
 :map_TriplesMap2_000 rml:logicalSource :source_000;
@@ -103,7 +103,7 @@
     rdfs:label "TriplesMap2".
 :s_001 a rr:SubjectMap.
 :map_TriplesMap2_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://riversidepollutionstudy.org/ontology/Place/{latitude}_{longitude}".
+:s_001 rr:template "http://riversidepollutionstudy.org/Place/{latitude}_{longitude}".
 :pom_006 a rr:PredicateObjectMap.
 :map_TriplesMap2_000 rr:predicateObjectMap :pom_006.
 :pm_006 a rr:PredicateMap.
@@ -149,7 +149,7 @@
     rdfs:label "TriplesMap3".
 :s_002 a rr:SubjectMap.
 :map_TriplesMap3_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://riversidepollutionstudy.org/ontology/City/{city}".
+:s_002 rr:template "http://riversidepollutionstudy.org/City/{city}".
 :pom_010 a rr:PredicateObjectMap.
 :map_TriplesMap3_000 rr:predicateObjectMap :pom_010.
 :pm_010 a rr:PredicateMap.
@@ -167,7 +167,7 @@
 :pm_011 rr:constant schema:containedInPlace.
 :pom_011 rr:objectMap :om_011.
 :om_011 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/AdministrativeArea/{county}";
+    rr:template "http://riversidepollutionstudy.org/AdministrativeArea/{county}";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_TriplesMap4_000.
 :map_TriplesMap4_000 rml:logicalSource :source_000;
@@ -175,7 +175,7 @@
     rdfs:label "TriplesMap4".
 :s_003 a rr:SubjectMap.
 :map_TriplesMap4_000 rr:subjectMap :s_003.
-:s_003 rr:template "http://riversidepollutionstudy.org/ontology/AdministrativeArea/{county}".
+:s_003 rr:template "http://riversidepollutionstudy.org/AdministrativeArea/{county}".
 :pom_012 a rr:PredicateObjectMap.
 :map_TriplesMap4_000 rr:predicateObjectMap :pom_012.
 :pm_012 a rr:PredicateMap.
@@ -193,7 +193,7 @@
 :pm_013 rr:constant schema:containedInPlace.
 :pom_013 rr:objectMap :om_013.
 :om_013 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/State/{state}";
+    rr:template "http://riversidepollutionstudy.org/State/{state}";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_TriplesMap5_000.
 :map_TriplesMap5_000 rml:logicalSource :source_000;
@@ -201,7 +201,7 @@
     rdfs:label "TriplesMap5".
 :s_004 a rr:SubjectMap.
 :map_TriplesMap5_000 rr:subjectMap :s_004.
-:s_004 rr:template "http://riversidepollutionstudy.org/ontology/State/{state}".
+:s_004 rr:template "http://riversidepollutionstudy.org/State/{state}".
 :pom_014 a rr:PredicateObjectMap.
 :map_TriplesMap5_000 rr:predicateObjectMap :pom_014.
 :pm_014 a rr:PredicateMap.
@@ -219,7 +219,7 @@
 :pm_015 rr:constant schema:containedInPlace.
 :pom_015 rr:objectMap :om_015.
 :om_015 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/Country/{country}";
+    rr:template "http://riversidepollutionstudy.org/Country/{country}";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_TriplesMap6_000.
 :map_TriplesMap6_000 rml:logicalSource :source_000;
@@ -227,7 +227,7 @@
     rdfs:label "TriplesMap6".
 :s_005 a rr:SubjectMap.
 :map_TriplesMap6_000 rr:subjectMap :s_005.
-:s_005 rr:template "http://riversidepollutionstudy.org/ontology/Country/{country}".
+:s_005 rr:template "http://riversidepollutionstudy.org/Country/{country}".
 :pom_016 a rr:PredicateObjectMap.
 :map_TriplesMap6_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
@@ -244,7 +244,7 @@
     rdfs:label "TriplesMap7".
 :s_006 a rr:SubjectMap.
 :map_TriplesMap7_000 rr:subjectMap :s_006.
-:s_006 rr:template "http://riversidepollutionstudy.org/ontology/Dataset/{dataset_id}".
+:s_006 rr:template "http://riversidepollutionstudy.org/Dataset/{dataset_id}".
 :pom_017 a rr:PredicateObjectMap.
 :map_TriplesMap7_000 rr:predicateObjectMap :pom_017.
 :pm_017 a rr:PredicateMap.
@@ -282,7 +282,7 @@
 :pm_020 rr:constant schema:hasPart.
 :pom_020 rr:objectMap :om_020.
 :om_020 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/Article/{readme_id}";
+    rr:template "http://riversidepollutionstudy.org/Article/{readme_id}";
     rr:termType rr:Literal.
 :pom_021 a rr:PredicateObjectMap.
 :map_TriplesMap7_000 rr:predicateObjectMap :pom_021.
@@ -291,7 +291,7 @@
 :pm_021 rr:constant prov:isDerivedFrom.
 :pom_021 rr:objectMap :om_021.
 :om_021 a rr:ObjectMap;
-    rr:template "http://riversidepollutionstudy.org/ontology/ScholarlyArticle/{scholarly_article_id}";
+    rr:template "http://riversidepollutionstudy.org/ScholarlyArticle/{scholarly_article_id}";
     rr:termType rr:Literal.
 :rules_000 void:exampleResource :map_TriplesMap8_000.
 :map_TriplesMap8_000 rml:logicalSource :source_002;
@@ -299,7 +299,7 @@
     rdfs:label "TriplesMap8".
 :s_007 a rr:SubjectMap.
 :map_TriplesMap8_000 rr:subjectMap :s_007.
-:s_007 rr:template "http://riversidepollutionstudy.org/ontology/ScholarlyArticle/{scholarly_article_id}".
+:s_007 rr:template "http://riversidepollutionstudy.org/ScholarlyArticle/{scholarly_article_id}".
 :pom_022 a rr:PredicateObjectMap.
 :map_TriplesMap8_000 rr:predicateObjectMap :pom_022.
 :pm_022 a rr:PredicateMap.
@@ -346,7 +346,7 @@
     rdfs:label "TriplesMap9".
 :s_008 a rr:SubjectMap.
 :map_TriplesMap9_000 rr:subjectMap :s_008.
-:s_008 rr:template "http://riversidepollutionstudy.org/ontology/Article/{article_id}".
+:s_008 rr:template "http://riversidepollutionstudy.org/Article/{article_id}".
 :pom_026 a rr:PredicateObjectMap.
 :map_TriplesMap9_000 rr:predicateObjectMap :pom_026.
 :pm_026 a rr:PredicateMap.

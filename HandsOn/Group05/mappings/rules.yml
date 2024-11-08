@@ -5,7 +5,7 @@ prefixes:
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     schema: "https://schema.org/"
     prov: "https://www.w3.org/TR/prov-o/"
-    rps: "http://riversidepollutionstudy.org/ontology/"
+    rps: "http://riversidepollutionstudy.org/"
     xsd: "http://www.w3.org/2001/XMLSchema#"
 
 sources:
